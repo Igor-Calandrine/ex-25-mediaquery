@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* Estilo para Telas */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(204, 204, 204);
+    height: 80px;
+}
+
+header nav ul {
+    background-color: black;
+    width: 100%;
+    list-style: none;
+}
+
+header nav ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+main article {
+    width: 90%;
+    display: block;
+    margin: auto;
+    background-color: azure;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 30px;
+}
+
+main article p {
+    margin:  15px 15px;
+}
+
+main article ul {
+    list-style-position: inside;
+    margin: 10px 50px;
+}
+
