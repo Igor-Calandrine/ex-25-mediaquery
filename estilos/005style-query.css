@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+
+    header nav i.material-symbols-outlined {
+        display:none
+    }
+
+    header nav ul {
+        display: block;
+    }
+
+    header ul li {
+        display:inline-block
+    }
+
+    main article {
+        max-width: 900px;
+    }
+}

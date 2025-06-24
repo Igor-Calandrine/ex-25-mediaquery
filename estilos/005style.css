@@ -7,9 +7,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(213, 213, 212);
+}
+
 header {
     background-color: rgb(81, 80, 80);
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(0, 0, 0, 0.479);
 
 }
 
@@ -26,7 +30,7 @@ header nav i.material-symbols-outlined {
     color: white;
     text-align: center;
     padding: 8px;
-    border-top: 2px solid black;
+    border-top: 2px solid rgb(0, 0, 0, 0.479);
     transition: 0.5s;
     cursor: pointer;
     
@@ -51,7 +55,7 @@ header ul li a {
     display: block;
     padding: 8px;
     text-decoration: none;
-    border-top: 2px solid black;
+    border-top: 2px solid rgba(0, 0, 0, 0.479);
     transition: 0.5s;
 }
 
@@ -61,8 +65,14 @@ header ul li a:hover {
 }
 
 main article {
-    width: 90vw;
+    width: 90%;
     margin: auto;
+    background-color: white;
+    padding: 0px 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+
 }
 
 main article h2 {
