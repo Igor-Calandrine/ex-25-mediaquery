@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/*Todas as demias mídias*/
+
+/* Typical Device Breackpoints
+-------------------------------------
+Pequenas: até 600px
+Celulares: de 600px até 760px
+Tablets: 760px até 992px
+Desktops: 992px até 1200px
+Grandes: acime de 1200px */
+
+@media print {
+    header h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: none;
+    }
+    
+    main {
+        border: 4px solid black;
+    }
+
+    main img {
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: none;
+    }
+
+    img#phone { display: none;}
+    img#pc {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#tv {display: none;}
+
+    main::after {
+        content: "Versão impressa por Igor Guimarães";
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 992px) { /*TABLETS*/
+
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    main {
+        max-width: 40%;
+    }
+
+    img#phone { display: none;}
+    img#pc {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#tv {display: none;}
+}
+
+
+@media screen and (min-width:993px) and (max-width:1200px) { /*DESKTOPS*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main {
+        max-width: 40%;
+    }
+
+    img#phone { display: none;}
+    img#pc {display: block;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width:1201px) { /*GRANDES*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        max-width: 30%;
+    }
+
+    img#phone { display: none;}
+    img#pc {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#tv {display: block;}
+}
