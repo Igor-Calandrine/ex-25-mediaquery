@@ -19,11 +19,30 @@ header h1 {
     padding: 40px 0px;
 }
 
+header nav i.material-symbols-outlined {
+    font-size: 1.5em;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-top: 2px solid black;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+
+header nav i.material-symbols-outlined:hover {
+    background-color: rgb(135, 134, 134);
+    transition: 0.5s;
+}
+
+
 header ul {
     list-style: none;
     font-size: 1.4em;
     text-align: center;
-    
+    display: none;
 }
 
 header ul li a {
@@ -33,10 +52,12 @@ header ul li a {
     padding: 8px;
     text-decoration: none;
     border-top: 2px solid black;
+    transition: 0.5s;
 }
 
 header ul li a:hover {
     background-color: rgb(105, 104, 104);
+    transition: 0.5s;
 }
 
 main article {
